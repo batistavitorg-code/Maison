@@ -49,7 +49,7 @@ header {
 }
 .main-nav ul a {
   color: #615e59;
-  font-family: Geist;
+  font-family: Geist, arial;
   font-weight: 500;
   font-size: 13px;
 }
@@ -61,7 +61,7 @@ header {
 
 .header-actions ul a {
   color: #615e59;
-  font-family: Geist;
+  font-family: Geist, arial;
   font-weight: 500;
   font-size: 13px;
   padding: 10px;
@@ -94,7 +94,72 @@ header {
 }
 .logo a {
   font-size: 2rem;
-  font-family: EB Garamond;
+  font-family:
+    EB Garamond,
+    arial;
   color: #1c1b19;
+  font-weight: 500;
+}
+
+.hero p,
+h1,
+a {
+  text-decoration: none;
+  margin: 0;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.hero img {
+  max-width: 100%;
+  display: block;
+  width: 1440px;
+  height: 680px;
+  grid-column: 1/3;
+}
+
+.hero .chronicles {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  width: 640px;
+  height: 230px;
+  position: absolute;
+  top: 370px;
+  bottom: 80px;
+  left: 80px;
+  box-sizing: border-box;
+}
+
+.chronicles p {
+  color: #fff;
+  grid-column: 1;
+  font-weight: 600;
+  font-family: geist, arial;
+  font-size: 12px;
+}
+.chronicles h1 {
+  grid-column: 1/4;
+  font-size: 56px;
+  font-family:
+    EB Garamond,
+    arial;
+  color: #fff;
+}
+
+.chronicles a {
+  font-family: geist, arial;
+  text-align: center;
+  font-size: 12px;
+  grid-column: 1;
+  display: block;
+  background: #fff;
+  color: #1c1b19;
+  padding: 16px 28px 16px 28px;
   font-weight: 500;
 }
